@@ -1,10 +1,16 @@
 package dev.matheusrocha.CadastrosDeNInjas;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "tb_cadastro_de_ninjas")
 public class NinjaModel {
 
-    String nome;
-    String email;
-    int idade;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
+    private String email;
+    private int idade;
 
     public NinjaModel() {
     }
