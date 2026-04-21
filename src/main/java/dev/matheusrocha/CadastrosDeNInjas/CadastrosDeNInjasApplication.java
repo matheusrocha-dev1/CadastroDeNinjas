@@ -10,4 +10,5 @@ public class CadastrosDeNInjasApplication {
 		SpringApplication.run(CadastrosDeNInjasApplication.class, args);
 	}
 
+
 }
